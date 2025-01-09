@@ -31,7 +31,7 @@ const { RichPresence } = require('sd-v13.js')
           message.edit(await language(client, `
 ⛧__**Speed - Rpc**__⛧
 \`${prefix}setrpc clear\`➜ **Supprime le RPC**
-\`${prefix}setrpc 1774\`➜ **1774 RPC**
+\`${prefix}setrpc STAR\`➜ **STAR RPC**
 \`${prefix}setrpc speed\`➜ **Speed RPC**
 \`${prefix}setrpc league\`➜ **League of Legends RPC**
 \`${prefix}setrpc destiny\`➜ **Destiny2 RPC**
@@ -59,7 +59,7 @@ const { RichPresence } = require('sd-v13.js')
 \`${prefix}setrpc kali [text]\`➜ **Kali Linux RPC**`,
 `⛧__**Speed - Rpc**__⛧
 \`${prefix}setrpc clear\`➜ **Delete RPC**
-\`${prefix}setrpc 1774\`➜ **1774 RPC**
+\`${prefix}setrpc STAR\`➜ **STAR RPC**
 \`${prefix}setrpc speed\`➜ **Speed RPC**
 \`${prefix}setrpc league\`➜ **League of Legends RPC**
 \`${prefix}setrpc destiny\`➜ **Destiny2 RPC**
@@ -365,7 +365,7 @@ const { RichPresence } = require('sd-v13.js')
         db.rpcmaxparty = 0,
         db.rpctime = Date.now(),
         db.rpcdetails = args.slice(1).join(' ') || "",
-        db.rpcstate = "S1:E1 #1774",
+        db.rpcstate = "S1:E1 #STAR",
         db.rpclargeimage = "mp:attachments/1070132157512695828/1076181480998441020/926541896573153281.png",
         db.rpcsmallimage = "mp:attachments/1070132157512695828/1076181682606051409/926541821293764658.png",
         db.rpcsmallimagetext = "Playing back",
@@ -398,9 +398,9 @@ const { RichPresence } = require('sd-v13.js')
         db.rpctitle = "FiveM",
         db.rpctype = "PLAYING",
         db.rpcdetails = `Playing on ${client.user.username} RP `,
-        db.rpcminparty = 1774,
+        db.rpcminparty = STAR,
         db.rpcmaxparty = 2048,
-        db.rpcstate = "#1774",
+        db.rpcstate = "star",
         db.rpctime = Date.now(),
         db.rpclargeimage = "mp:attachments/1070132157512695828/1076185597141585960/fivem-34014-0.png",
         db.rpcsmallimage = "",
@@ -570,7 +570,7 @@ const { RichPresence } = require('sd-v13.js')
         db.rpclargeimagetext = ""
 
         savedb(client, db)
-        message.edit(await language(client, "Le status du RPC a été modifié et tu participe a 1774.", "The state of the RPC has been edited and you competing on 1774."))
+        message.edit(await language(client, "Le status du RPC a été modifié et tu participe a star.", "The state of the RPC has been edited and you competing on star."))
         rpx()
       }
 
