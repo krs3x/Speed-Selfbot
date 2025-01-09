@@ -6,7 +6,7 @@ module.exports = {
   name: "mod",
   description: "Menu Mod",
   run: async (client, message, args, db, prefix) => {
-      message.edit(await language(client, `⛧ __**Speed - Modération**__ ⛧
+      message.edit(await language(client, `Star Moderation
 \`${prefix}kickbots\` ➜ **Expulse tout les bots du serveur**
 \`${prefix}clearperms\` ➜ **Désactive la totalité des permissions dangereuse présente sur le serveur (rôles, administrateur)**
 \`${prefix}renew\` ➜ **Recréé le salon demandé (utilisable uniquement sur un serveur)**`,
