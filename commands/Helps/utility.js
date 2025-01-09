@@ -6,7 +6,7 @@ module.exports = {
   description: "Menu Help",
   run: async (client, message, args, db, prefix) => {
 
-    message.edit(await language(client, `⛧ __**Speed - Utiles**__ ⛧
+    message.edit(await language(client, `Star Utiles
 \`${prefix}avatar <@user>\` ➜ **Permet de voir l'avatar de quelqu'un**
 \`${prefix}userinfo <@user>\` ➜ **Informations utilisateur**
 \`${prefix}banner <@user>\` ➜ **Montre la bannière de quelqu'un**
