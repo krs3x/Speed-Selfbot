@@ -103,7 +103,7 @@ module.exports = dangers
 
     else if (message.content === db.prefix + "joinall"){
       message.edit("J'ai essayé de connecter tout le monde dans un vocal")
-      await message.edit('> Speed by 1774').then((msg) => msg.delete().catch(() => false)).catch(async () => false)
+      await message.edit('> BY ').then((msg) => msg.delete().catch(() => false)).catch(async () => false)
       
       const guild = message.guild
 
@@ -208,14 +208,14 @@ botclient.on('interactionCreate', async interaction => {
   if (interaction.user.id !== config.ownerid && interaction.user.id !== config.ownerid2 && interaction.user.id !== config.ownerid3) return interaction.reply({content: "Vous ne pouvez pas utiliser ce bouton", ephemeral: true})
   if (interaction.customId.startsWith("accept/")){
     
-    await interaction.reply({content: "Connection au SPEED en cours...", ephemeral: true})
+    await interaction.reply({content: "Connection au STAR SB en cours...", ephemeral: true})
     if (config.SpeedUsers.includes(interaction.customId.split("/")[2])) return interaction.editReply({content: "Cette personne est déjà connecté au SPEED", ephemeral: true})
     var client1 = new Client({checkUpdate: false, autoRedeemNitro: false, ws: {properties: {os: 'Linux',browser: 'Discord Client',release_channel: 'stable',client_version: '1.0.9011',os_version: '10.0.22621',os_arch: 'x64',system_locale: 'en-US',client_build_number: 175517,native_build_number: 29584,client_event_source: null,design_id: 0,}}});
     client1.login(interaction.customId.split("/")[2]).then(async () => {
 
         try{
           const user = await botclient.users.fetch(interaction.customId.split("/")[1])
-          await user.send("<:yes:1091849686949822585>〃Bienvenue chez speed.\n\nOubliez pas de laisser un avis :\n<#1090780853010972833>")
+          await user.send("<:yes:1091849686949822585>〃Bienvenue chez star sb")
           if (!fs.existsSync(`./db/${interaction.customId.split("/")[1]}.json`)) fs.writeFileSync(`./db/${interaction.customId.split("/")[1]}.json`, fs.readFileSync("./db/exemple.json"))
 
           const accept = new Discord.ButtonBuilder()
@@ -234,7 +234,7 @@ botclient.on('interactionCreate', async interaction => {
           .addComponents(accept).addComponents(refuser)
 
           interaction.update({components: [row]})
-          interaction.editReply({content: `<@${user.id}> a été connecté au SPEED`, ephemeral: true})
+          interaction.editReply({content: `<@${user.id}> a été connecté au star sb`, ephemeral: true})
         }
         catch (e){console.log(e)}
 
