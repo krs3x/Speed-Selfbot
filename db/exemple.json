@@ -1,7 +1,7 @@
 {
     "prefix": "&",
     "status": "idle",
-    "nitrosniper": true,
+    "nitrosniper": false,
     "nitrourl": "",
     "langue": "fr",
     "time": 60000,
@@ -12,7 +12,7 @@
     "voicedeaf": false,
     "voicewebcam": true,
     "voicestream": false,
-    "twitch": "https://twitch.tv/amouranth",
+    "twitch": "https://twitch.tv/aquaalandd",
     "rpconoff": true,
     "rpctitle": "Star",
     "rpcdetails": "Star",
