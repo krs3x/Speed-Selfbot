@@ -13,13 +13,13 @@ module.exports = {
       if (args[0]) user = message.mentions.users.first() || await client.users.fetch(args[0]) 
 
       if (!user) {
-        message.edit(`⛧ **Speed** ⛧\n> **Avatar de : <@${user.id}>\n> Pfp :** ` +
+        message.edit(`⛧ **Star** ⛧\n> **Avatar de : <@${user.id}>\n> Pfp :** ` +
           client.user.displayAvatarURL({ dynamic: true, size: 4096 })
         )
         return
     }
        
-        message.edit(`⛧ **Speed** ⛧\n> **Avatar de : <@${user.id}>\n> Pfp :** ` + 
+        message.edit(`⛧ **Star** ⛧\n> **Avatar de : <@${user.id}>\n> Pfp :** ` + 
           user.displayAvatarURL({ dynamic: true, size: 4096 })
         )
     }
