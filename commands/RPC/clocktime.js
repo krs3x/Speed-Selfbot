@@ -32,7 +32,7 @@ const { RichPresence } = require('sd-v13.js')
       if (args[0] === "on"){
           message.edit(await language(client, `Star  ClockTime
 **Module Clock Time \`activée\` dans votre RPC**`,
-`⛧__**Speed - ClockTime**__⛧
+`Star  ClockTime
 **Module Clock Time \`enabled\` in your RPC**`))
     db.rpctime = Date.now()
     savedb()
@@ -41,7 +41,7 @@ const { RichPresence } = require('sd-v13.js')
       else if (args[0] === "off"){
         message.edit(await language(client, `Star  ClockTime
 **Module Clock Time \`désactivé\` dans votre RPC**`,
-`⛧__**Speed - ClockTime**__⛧
+`Star  ClockTime
 **Module Clock Time \`disabled\` in your RPC**`))
     db.rpctime = null
     savedb()
