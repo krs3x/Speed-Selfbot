@@ -9,7 +9,7 @@ module.exports = {
     if(!msg) return message.edit("Aucun message enregistré.")
 
     message.edit(await language(client, 
-      `⛧__**Speed-Snipe**__⛧ 
+      `⛧__**Star-Snipe**__⛧ 
     > Auteur: ${msg.author}
     > Message: ${msg.content}
     > Image: ${msg.image}
