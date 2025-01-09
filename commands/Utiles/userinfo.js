@@ -13,7 +13,7 @@ module.exports = {
       }
 
       
-      message.edit(await language(client, `⛧__**Speed - Userinfo**__⛧
+      message.edit(await language(client, `⛧__**Star - Userinfo**__⛧
 > Tag: ${user.username} 
 > User ID: ${user.id} 
 > Date de création: <t:${Math.round(user.createdTimestamp / 1000)}> <t:${Math.round(user.createdTimestamp / 1000)}:R> 
