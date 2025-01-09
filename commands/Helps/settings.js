@@ -8,7 +8,7 @@ module.exports = {
     try{
 
         message.edit(await language(client, `
-        ⛧ __**Speed - Config**__ ⛧
+        STAR CONFIG
 \`${prefix}setprefix <prefix>\` ➜ **Défini un nouveau préfix**
 \`${prefix}setusername <twitch>\` ➜ **Défini le pseudo twitch**
 \`${prefix}togglesniper <on/off>\` ➜ **Activer / désactiver le sniper nitro**
