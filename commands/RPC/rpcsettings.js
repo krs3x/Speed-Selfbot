@@ -7,7 +7,7 @@ const {  language, savedb } = require("../../fonctions")
   run: async (client, message, args, db, prefix) => {
     try{
 
-        message.edit(await language(client, `⛧__**Speed - Rpc Settings**__⛧
+        message.edit(await language(client, `Star - Rpc Settings
 
 > Nom : \`${db.rpctitle || "None"}\`
 > Type : \`${db.rpctype || "None"}\`
