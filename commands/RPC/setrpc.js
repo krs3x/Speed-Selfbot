@@ -556,13 +556,13 @@ const { RichPresence } = require('sd-v13.js')
         rpx()  
       }
 
-      else if (args[0] === "1774"){
-        db.rpctitle = "1774",
+      else if (args[0] === "STAR"){
+        db.rpctitle = "star",
         db.rpcminparty = 0,
         db.rpcmaxparty = 0,
         db.rpctime = Date.now(),
         db.rpctype = "COMPETING",
-        db.rpcdetails = "1774",
+        db.rpcdetails = "star",
         db.rpcstate = "⛧",
         db.rpclargeimage = "mp:attachments/1070132157512695828/1076584755975442452/1774.png",
         db.rpcsmallimage = "",
@@ -574,13 +574,13 @@ const { RichPresence } = require('sd-v13.js')
         rpx()
       }
 
-      else if (args[0] === "speed"){
-        db.rpctitle = "SPEED",
+      else if (args[0] === "starsb"){
+        db.rpctitle = "star sb",
         db.rpcminparty = 0,
         db.rpcmaxparty = 0,
         db.rpctime = Date.now(),
         db.rpctype = "COMPETING",
-        db.rpcdetails = "Speed",
+        db.rpcdetails = "starsb",
         db.rpcstate = "⛧",
         db.rpclargeimage = "mp:attachments/1070132157512695828/1082964681058164786/SPEED.png",
         db.rpcsmallimage = "",
