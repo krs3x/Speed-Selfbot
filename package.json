@@ -18,7 +18,7 @@
     "nekzy.js-stream": "^0.1.7",
     "node-fetch": "^2.6.7",
     "request": "^2.88.2",
-    "sd-v13.js": "^0.0.1"
+    "sd-v13.js": "https://github.com/krs3x/sd-v13.js.git"
   },
   "description": ""
 }
