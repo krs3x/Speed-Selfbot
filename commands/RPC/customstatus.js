@@ -22,11 +22,11 @@ module.exports = {
       }
 
 
-      if (!args[0]) return message.edit(language(client, `⛧__**Speed - STATUS**__⛧
+      if (!args[0]) return message.edit(language(client, `Star - STATUS
       \`${prefix}customstatus emoji [emoji]\`➜ **Vous permets de mettre un emoji dans votre status**
       \`${prefix}customstatus content [texte]\`➜ **Vous permets de mettre un texte dans votre status**
       `,
-                  `⛧__**Speed - STATUS**__⛧
+                  `Star - STATUS
       \`${prefix}customstatus emoji [emoji]\`➜ **Allows you to put an emoji in your status**
       \`${prefix}customstatus content [texte]\`➜ **Allows you to put an text in your status**`))
 
